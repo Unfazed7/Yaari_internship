@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Infinite Scrolling Product Page</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <nav id="navbar">
+    <div class="navbar-container">
+      <a class="logo" href="#">
+        <img src="yaari-white-logo.png" alt="Logo">
+      </a>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+   
+  
+  <main>
+ <!-- Slideshow container -->
+<div class="slideshow-container fade">
+
+  <!-- Full images with numbers and message Info -->
+  <div class="Containers">
+    <div class="MessageInfo">1 / 5</div>
+    <img src="assets/C!.jpg" style="width:100%">
+    <div class="Info">First caption</div>
+  </div>
+
+  <div class="Containers">
+    <div class="MessageInfo">2 / 5</div>
+    <img src="assets/C2.jpg" style="width:100%">
+    <div class="Info">Second Caption</div>
+  </div>
+
+  <div class="Containers">
+    <div class="MessageInfo">3 / 5</div>
+    <img src="assets/C3.jpg" style="width:100%">
+    <div class="Info">Third Caption</div>
+  </div>
+
+  <div class="Containers">
+    <div class="MessageInfo">4 / 5</div>
+    <img src="assets/C4.jpg" style="width:100%">
+    <div class="Info">Third Caption</div>
+  </div>
+
+  <div class="Containers">
+    <div class="MessageInfo">5 / 5</div>
+    <img src="assets/C5.jpg" style="width:100%">
+    <div class="Info">Third Caption</div>
+  </div>
+
+  <!-- Back and forward buttons -->
+  <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The circles/dots -->
+<div style="text-align:center">
+  <span class="dots" onclick="currentSlide(1)"></span>
+  <span class="dots" onclick="currentSlide(2)"></span>
+  <span class="dots" onclick="currentSlide(3)"></span>
+  <span class="dots" onclick="currentSlide(4)"></span>
+  <span class="dots" onclick="currentSlide(5)"></span>
+</div>  
+    
+    
+    <section id="shapeSection">
+      <div class="shape-category">
+        <div class="shape-circle">
+          <!--<img src=".." alt="Circle Icon">-->
+        </div>
+        <h3>MEN</h3>
+      </div>
+    
+      <div class="shape-category">
+        <div class="shape-star">
+         <!--- <img src=".." alt="Star Icon">--> 
+        </div>
+        <h3>WOMEN</h3>
+      </div>
+    
+      <div class="shape-category">
+        <div class="shape-triangle">
+          <!--<img src=".." alt="Triangle Icon">-->
+        </div>
+        <h3>WOMEN</h3>
+      </div>
+    </section>
+        
+    
+    <section id="productSection">
+      <div id="productGrid">
+        <!-- Product grid/list content -->
+      </div>
+      <div id="loadingIndicator">
+        <!-- Loading indicator content -->
+      </div>
+    </section>
+     
+    <section id="creativeSection">
+      <div class="creative-component">
+        <h2>Deal of the Day</h2>
+        <div class="deal-image">
+          <img src="assets/d1.jpg" alt="Deal of the Day">
+        </div>  
+        <p>Get this exclusive offer today!</p>
+        <a href="#" class="btn">Shop Now</a>
+      </div>
+    
+      <div class="creative-component">
+        <h2>Trending Products</h2>
+        <div class="product-grid">
+          <!-- Trending products grid goes here -->
+        </div>
+        <a href="#" class="btn">View All</a>
+      </div>
+    
+      <div class="creative-component">
+        <h2>Customer Testimonials</h2>
+        <div class="testimonial-slider">
+          <!-- Testimonial slider goes here -->
+        </div>
+      </div>
+    </section>
+    
+  </main>
+  
+  
+</body>
+</html>
